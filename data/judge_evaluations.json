@@ -1,0 +1,252 @@
+[
+    {
+        "submission_id": "Q01_S01",
+        "question_id": "Q01",
+        "generator_model": "qwen2.5-coder:3b",
+        "judge_model": "qwen2.5:7b",
+        "prompt_version": "structured_rubric_v1",
+        "evaluation": {
+            "correctness": 10,
+            "security": 10,
+            "readability": 10,
+            "efficiency": 10,
+            "overall_score": 10.0,
+            "explanations": {
+                "correctness": "The function correctly calculates the factorial of a non-negative integer. It handles the edge case of 0 and 1 appropriately and raises a ValueError for negative inputs. The logic is accurate and the function behaves as expected.",
+                "security": "The function does not perform any unsafe operations or handle inputs in a way that could lead to security vulnerabilities. It only performs basic arithmetic operations and checks for negative input, which is safe.",
+                "readability": "The code is well-structured, with clear variable names and a docstring that explains the function's purpose, arguments, and return value. The logic is easy to follow, and the code is properly formatted.",
+                "efficiency": "The function is efficient. It uses a simple loop to calculate the factorial, which has a time complexity of O(n) and a space complexity of O(1). There are no unnecessary operations, and the code is concise."
+            },
+            "issues": [],
+            "suggestions": []
+        },
+        "raw_response": "{\n  \"correctness\": 10,\n  \"security\": 10,\n  \"readability\": 10,\n  \"efficiency\": 10,\n  \"overall_score\": 10,\n  \"explanations\": {\n    \"correctness\": \"The function correctly calculates the factorial of a non-negative integer. It handles the edge case of 0 and 1 appropriately and raises a ValueError for negative inputs. The logic is accurate and the function behaves as expected.\",\n    \"security\": \"The function does not perform any unsafe operations or handle inputs in a way that could lead to security vulnerabilities. It only performs basic arithmetic operations and checks for negative input, which is safe.\",\n    \"readability\": \"The code is well-structured, with clear variable names and a docstring that explains the function's purpose, arguments, and return value. The logic is easy to follow, and the code is properly formatted.\",\n    \"efficiency\": \"The function is efficient. It uses a simple loop to calculate the factorial, which has a time complexity of O(n) and a space complexity of O(1). There are no unnecessary operations, and the code is concise.\"\n  },\n  \"issues\": [],\n  \"suggestions\": []\n}",
+        "evaluated_at": "2026-11-05T04:09:43.753616+00:00",
+        "status": "success"
+    },
+    {
+        "submission_id": "Q02_S01",
+        "question_id": "Q02",
+        "generator_model": "qwen2.5-coder:3b",
+        "judge_model": "qwen2.5:7b",
+        "prompt_version": "structured_rubric_v1",
+        "evaluation": {
+            "correctness": 10,
+            "security": 10,
+            "readability": 9,
+            "efficiency": 8,
+            "overall_score": 9.25,
+            "explanations": {
+                "correctness": "The function correctly identifies prime numbers and handles edge cases like numbers less than or equal to 1. The algorithm is efficient for its purpose, checking divisibility up to the square root of the number.",
+                "security": "There are no unsafe operations or input handling issues. The function only operates on integer inputs and does not interact with external systems or user inputs in a way that could introduce security vulnerabilities.",
+                "readability": "The code is well-structured with clear variable names and a concise docstring. The logic is easy to follow, and the function is self-contained.",
+                "efficiency": "The algorithm is efficient with a time complexity of O(\u221an). However, the code could be slightly optimized by removing the check for divisibility by 2 and 3, as the loop starts from 5 and increments by 6, effectively skipping these checks."
+            },
+            "issues": [],
+            "suggestions": []
+        },
+        "raw_response": "{\n  \"correctness\": 10,\n  \"security\": 10,\n  \"readability\": 9,\n  \"efficiency\": 8,\n  \"overall_score\": 9,\n  \"explanations\": {\n    \"correctness\": \"The function correctly identifies prime numbers and handles edge cases like numbers less than or equal to 1. The algorithm is efficient for its purpose, checking divisibility up to the square root of the number.\",\n    \"security\": \"There are no unsafe operations or input handling issues. The function only operates on integer inputs and does not interact with external systems or user inputs in a way that could introduce security vulnerabilities.\",\n    \"readability\": \"The code is well-structured with clear variable names and a concise docstring. The logic is easy to follow, and the function is self-contained.\",\n    \"efficiency\": \"The algorithm is efficient with a time complexity of O(\u221an). However, the code could be slightly optimized by removing the check for divisibility by 2 and 3, as the loop starts from 5 and increments by 6, effectively skipping these checks.\"\n  },\n  \"issues\": [],\n  \"suggestions\": []\n}",
+        "evaluated_at": "2026-11-05T04:09:54.244377+00:00",
+        "status": "success"
+    },
+    {
+        "submission_id": "Q03_S01",
+        "question_id": "Q03",
+        "generator_model": "qwen2.5-coder:3b",
+        "judge_model": "qwen2.5:7b",
+        "prompt_version": "structured_rubric_v1",
+        "evaluation": {
+            "correctness": 10,
+            "security": 10,
+            "readability": 10,
+            "efficiency": 10,
+            "overall_score": 10.0,
+            "explanations": {
+                "correctness": "The function correctly reverses the input string using slicing, which is a standard and efficient method. It handles all cases, including empty strings and strings with special characters.",
+                "security": "There are no unsafe operations or input handling issues. The function does not process any external inputs that could introduce vulnerabilities, and it does not perform any operations that could lead to security risks.",
+                "readability": "The code is well-structured and easy to understand. The function name, docstring, and variable names are clear and descriptive. The code follows Python's PEP 8 style guide.",
+                "efficiency": "The slicing operation used to reverse the string is very efficient, with a time complexity of O(n) and a space complexity of O(n). There are no unnecessary operations, and the code is concise."
+            },
+            "issues": [],
+            "suggestions": []
+        },
+        "raw_response": "{\n  \"correctness\": 10,\n  \"security\": 10,\n  \"readability\": 10,\n  \"efficiency\": 10,\n  \"overall_score\": 10,\n  \"explanations\": {\n    \"correctness\": \"The function correctly reverses the input string using slicing, which is a standard and efficient method. It handles all cases, including empty strings and strings with special characters.\",\n    \"security\": \"There are no unsafe operations or input handling issues. The function does not process any external inputs that could introduce vulnerabilities, and it does not perform any operations that could lead to security risks.\",\n    \"readability\": \"The code is well-structured and easy to understand. The function name, docstring, and variable names are clear and descriptive. The code follows Python's PEP 8 style guide.\",\n    \"efficiency\": \"The slicing operation used to reverse the string is very efficient, with a time complexity of O(n) and a space complexity of O(n). There are no unnecessary operations, and the code is concise.\"\n  },\n  \"issues\": [],\n  \"suggestions\": []\n}",
+        "evaluated_at": "2026-11-05T04:10:04.035484+00:00",
+        "status": "success"
+    },
+    {
+        "submission_id": "Q04_S01",
+        "question_id": "Q04",
+        "generator_model": "qwen2.5-coder:3b",
+        "judge_model": "qwen2.5:7b",
+        "prompt_version": "structured_rubric_v1",
+        "evaluation": {
+            "correctness": 10,
+            "security": 10,
+            "readability": 10,
+            "efficiency": 10,
+            "overall_score": 10.0,
+            "explanations": {
+                "correctness": "The function correctly checks if a string is a palindrome by normalizing the string and comparing it to its reverse. It handles edge cases such as ignoring non-alphanumeric characters and case sensitivity.",
+                "security": "The function does not perform any unsafe operations or handle inputs in a way that could lead to security vulnerabilities. It only processes the input string and does not interact with external systems or resources.",
+                "readability": "The code is well-structured, uses clear and descriptive variable names, and follows Python's PEP 8 style guide. The function docstring provides a good explanation of what the function does, its arguments, and its return value.",
+                "efficiency": "The function has a time complexity of O(n) where n is the length of the string, as it iterates through the string to create the normalized version and then compares it to its reverse. The space complexity is also O(n) due to the creation of the normalized string. There are no unnecessary operations, and the code is concise and efficient."
+            },
+            "issues": [],
+            "suggestions": []
+        },
+        "raw_response": "{\n  \"correctness\": 10,\n  \"security\": 10,\n  \"readability\": 10,\n  \"efficiency\": 10,\n  \"overall_score\": 10,\n  \"explanations\": {\n    \"correctness\": \"The function correctly checks if a string is a palindrome by normalizing the string and comparing it to its reverse. It handles edge cases such as ignoring non-alphanumeric characters and case sensitivity.\",\n    \"security\": \"The function does not perform any unsafe operations or handle inputs in a way that could lead to security vulnerabilities. It only processes the input string and does not interact with external systems or resources.\",\n    \"readability\": \"The code is well-structured, uses clear and descriptive variable names, and follows Python's PEP 8 style guide. The function docstring provides a good explanation of what the function does, its arguments, and its return value.\",\n    \"efficiency\": \"The function has a time complexity of O(n) where n is the length of the string, as it iterates through the string to create the normalized version and then compares it to its reverse. The space complexity is also O(n) due to the creation of the normalized string. There are no unnecessary operations, and the code is concise and efficient.\"\n  },\n  \"issues\": [],\n  \"suggestions\": []\n}",
+        "evaluated_at": "2026-11-05T04:10:15.815119+00:00",
+        "status": "success"
+    },
+    {
+        "submission_id": "Q05_S01",
+        "question_id": "Q05",
+        "generator_model": "qwen2.5-coder:3b",
+        "judge_model": "qwen2.5:7b",
+        "prompt_version": "structured_rubric_v1",
+        "evaluation": {
+            "correctness": 10,
+            "security": 10,
+            "readability": 10,
+            "efficiency": 10,
+            "overall_score": 10.0,
+            "explanations": {
+                "correctness": "The function correctly finds the maximum element in the list. It handles the edge case where the list is empty by raising a ValueError. The logic is accurate and the function behaves as expected.",
+                "security": "The function does not perform any unsafe operations or handle inputs in a way that could lead to security vulnerabilities. It only operates on a list of numbers and does not interact with external systems or user inputs in a way that could be exploited.",
+                "readability": "The code is well-structured, uses clear and descriptive variable names, and includes a docstring that explains the function's purpose, arguments, return value, and exceptions. The loop and logic are straightforward and easy to follow.",
+                "efficiency": "The function has a time complexity of O(n), where n is the number of elements in the list, which is the best possible time complexity for this problem. It only uses a single variable to keep track of the maximum element, making the space complexity O(1). There are no unnecessary operations."
+            },
+            "issues": [],
+            "suggestions": []
+        },
+        "raw_response": "{\n  \"correctness\": 10,\n  \"security\": 10,\n  \"readability\": 10,\n  \"efficiency\": 10,\n  \"overall_score\": 10,\n  \"explanations\": {\n    \"correctness\": \"The function correctly finds the maximum element in the list. It handles the edge case where the list is empty by raising a ValueError. The logic is accurate and the function behaves as expected.\",\n    \"security\": \"The function does not perform any unsafe operations or handle inputs in a way that could lead to security vulnerabilities. It only operates on a list of numbers and does not interact with external systems or user inputs in a way that could be exploited.\",\n    \"readability\": \"The code is well-structured, uses clear and descriptive variable names, and includes a docstring that explains the function's purpose, arguments, return value, and exceptions. The loop and logic are straightforward and easy to follow.\",\n    \"efficiency\": \"The function has a time complexity of O(n), where n is the number of elements in the list, which is the best possible time complexity for this problem. It only uses a single variable to keep track of the maximum element, making the space complexity O(1). There are no unnecessary operations.\"\n  },\n  \"issues\": [],\n  \"suggestions\": []\n}",
+        "evaluated_at": "2026-11-05T04:10:27.399457+00:00",
+        "status": "success"
+    },
+    {
+        "submission_id": "Q06_S01",
+        "question_id": "Q06",
+        "generator_model": "qwen2.5-coder:3b",
+        "judge_model": "qwen2.5:7b",
+        "prompt_version": "structured_rubric_v1",
+        "evaluation": {
+            "correctness": 10,
+            "security": 10,
+            "readability": 10,
+            "efficiency": 10,
+            "overall_score": 10.0,
+            "explanations": {
+                "correctness": "The function correctly removes duplicates while preserving the original order of elements. It handles the expected behavior and edge cases, such as an empty list or a list with no duplicates.",
+                "security": "The code does not perform any unsafe operations or handle inputs in a way that could lead to security vulnerabilities. It uses a set to track seen items, which is a common and safe approach.",
+                "readability": "The code is well-structured, with clear variable names and a docstring that explains the function's purpose. The logic is easy to follow, and the code is concise and maintainable.",
+                "efficiency": "The function has a time complexity of O(n) and a space complexity of O(n), where n is the number of elements in the input list. This is optimal for this problem, as it needs to check each item and store seen items. There are no unnecessary operations."
+            },
+            "issues": [],
+            "suggestions": []
+        },
+        "raw_response": "{\n  \"correctness\": 10,\n  \"security\": 10,\n  \"readability\": 10,\n  \"efficiency\": 10,\n  \"overall_score\": 10,\n  \"explanations\": {\n    \"correctness\": \"The function correctly removes duplicates while preserving the original order of elements. It handles the expected behavior and edge cases, such as an empty list or a list with no duplicates.\",\n    \"security\": \"The code does not perform any unsafe operations or handle inputs in a way that could lead to security vulnerabilities. It uses a set to track seen items, which is a common and safe approach.\",\n    \"readability\": \"The code is well-structured, with clear variable names and a docstring that explains the function's purpose. The logic is easy to follow, and the code is concise and maintainable.\",\n    \"efficiency\": \"The function has a time complexity of O(n) and a space complexity of O(n), where n is the number of elements in the input list. This is optimal for this problem, as it needs to check each item and store seen items. There are no unnecessary operations.\"\n  },\n  \"issues\": [],\n  \"suggestions\": []\n}",
+        "evaluated_at": "2026-11-05T04:10:38.083415+00:00",
+        "status": "success"
+    },
+    {
+        "submission_id": "Q07_S01",
+        "question_id": "Q07",
+        "generator_model": "qwen2.5-coder:3b",
+        "judge_model": "qwen2.5:7b",
+        "prompt_version": "structured_rubric_v1",
+        "evaluation": {
+            "correctness": 10,
+            "security": 10,
+            "readability": 10,
+            "efficiency": 10,
+            "overall_score": 10.0,
+            "explanations": {
+                "correctness": "The function correctly identifies the second largest distinct element. It handles edge cases such as when the list has fewer than two elements or when all elements are the same.",
+                "security": "The code does not perform any unsafe operations or handle inputs in a way that could lead to security vulnerabilities. It uses a set to ensure distinct elements, which is a safe operation.",
+                "readability": "The code is well-organized, uses clear variable names, and follows a logical structure. It is easy to understand and maintain.",
+                "efficiency": "The solution is efficient. It uses a set to remove duplicates and then sorts the set, which is a straightforward and effective approach. The time complexity is O(n log n) due to sorting, and the space complexity is O(n) for storing the set."
+            },
+            "issues": [],
+            "suggestions": []
+        },
+        "raw_response": "{\n  \"correctness\": 10,\n  \"security\": 10,\n  \"readability\": 10,\n  \"efficiency\": 10,\n  \"overall_score\": 10,\n  \"explanations\": {\n    \"correctness\": \"The function correctly identifies the second largest distinct element. It handles edge cases such as when the list has fewer than two elements or when all elements are the same.\",\n    \"security\": \"The code does not perform any unsafe operations or handle inputs in a way that could lead to security vulnerabilities. It uses a set to ensure distinct elements, which is a safe operation.\",\n    \"readability\": \"The code is well-organized, uses clear variable names, and follows a logical structure. It is easy to understand and maintain.\",\n    \"efficiency\": \"The solution is efficient. It uses a set to remove duplicates and then sorts the set, which is a straightforward and effective approach. The time complexity is O(n log n) due to sorting, and the space complexity is O(n) for storing the set.\"\n  },\n  \"issues\": [],\n  \"suggestions\": []\n}",
+        "evaluated_at": "2026-11-05T04:10:48.177171+00:00",
+        "status": "success"
+    },
+    {
+        "submission_id": "Q08_S01",
+        "question_id": "Q08",
+        "generator_model": "qwen2.5-coder:3b",
+        "judge_model": "qwen2.5:7b",
+        "prompt_version": "structured_rubric_v1",
+        "evaluation": {
+            "correctness": 10,
+            "security": 10,
+            "readability": 10,
+            "efficiency": 10,
+            "overall_score": 10.0,
+            "explanations": {
+                "correctness": "The function correctly implements the binary search algorithm. It handles the edge case where the target is not found by returning -1. The logic for updating the `left` and `right` pointers is accurate.",
+                "security": "There are no unsafe operations or input handling issues. The function does not rely on external inputs that could introduce vulnerabilities. It operates on a sorted list and a target value, both of which are assumed to be valid.",
+                "readability": "The code is well-structured and easy to understand. Variable names are descriptive, and the logic follows a clear and concise pattern. The function docstring provides a good description of the parameters and return value.",
+                "efficiency": "The binary search algorithm has a time complexity of O(log n), which is optimal for this problem. The space complexity is O(1) as it uses a constant amount of extra space. There are no unnecessary operations, and the code is efficient."
+            },
+            "issues": [],
+            "suggestions": []
+        },
+        "raw_response": "{\n  \"correctness\": 10,\n  \"security\": 10,\n  \"readability\": 10,\n  \"efficiency\": 10,\n  \"overall_score\": 10,\n  \"explanations\": {\n    \"correctness\": \"The function correctly implements the binary search algorithm. It handles the edge case where the target is not found by returning -1. The logic for updating the `left` and `right` pointers is accurate.\",\n    \"security\": \"There are no unsafe operations or input handling issues. The function does not rely on external inputs that could introduce vulnerabilities. It operates on a sorted list and a target value, both of which are assumed to be valid.\",\n    \"readability\": \"The code is well-structured and easy to understand. Variable names are descriptive, and the logic follows a clear and concise pattern. The function docstring provides a good description of the parameters and return value.\",\n    \"efficiency\": \"The binary search algorithm has a time complexity of O(log n), which is optimal for this problem. The space complexity is O(1) as it uses a constant amount of extra space. There are no unnecessary operations, and the code is efficient.\"\n  },\n  \"issues\": [],\n  \"suggestions\": []\n}",
+        "evaluated_at": "2026-11-05T04:10:59.507798+00:00",
+        "status": "success"
+    },
+    {
+        "submission_id": "Q09_S01",
+        "question_id": "Q09",
+        "generator_model": "qwen2.5-coder:3b",
+        "judge_model": "qwen2.5:7b",
+        "prompt_version": "structured_rubric_v1",
+        "evaluation": {
+            "correctness": 10,
+            "security": 10,
+            "readability": 10,
+            "efficiency": 10,
+            "overall_score": 10.0,
+            "explanations": {
+                "correctness": "The function correctly checks if the parentheses in the string are balanced. It handles all edge cases, such as an empty string or a string with only opening or closing parentheses, and returns the correct boolean value.",
+                "security": "The function does not perform any unsafe operations or handle inputs in a way that could lead to security vulnerabilities. It only processes the input string and uses a stack to keep track of the parentheses, which is a safe and efficient approach.",
+                "readability": "The code is well-structured, with clear variable names and a docstring that explains the function's purpose. The logic is easy to follow, and the code is concise and easy to maintain.",
+                "efficiency": "The function has a time complexity of O(n), where n is the length of the string, as it processes each character exactly once. The space complexity is also O(n) due to the stack used to keep track of the parentheses. There are no unnecessary operations, and the code is optimized for performance."
+            },
+            "issues": [],
+            "suggestions": []
+        },
+        "raw_response": "{\n  \"correctness\": 10,\n  \"security\": 10,\n  \"readability\": 10,\n  \"efficiency\": 10,\n  \"overall_score\": 10,\n  \"explanations\": {\n    \"correctness\": \"The function correctly checks if the parentheses in the string are balanced. It handles all edge cases, such as an empty string or a string with only opening or closing parentheses, and returns the correct boolean value.\",\n    \"security\": \"The function does not perform any unsafe operations or handle inputs in a way that could lead to security vulnerabilities. It only processes the input string and uses a stack to keep track of the parentheses, which is a safe and efficient approach.\",\n    \"readability\": \"The code is well-structured, with clear variable names and a docstring that explains the function's purpose. The logic is easy to follow, and the code is concise and easy to maintain.\",\n    \"efficiency\": \"The function has a time complexity of O(n), where n is the length of the string, as it processes each character exactly once. The space complexity is also O(n) due to the stack used to keep track of the parentheses. There are no unnecessary operations, and the code is optimized for performance.\"\n  },\n  \"issues\": [],\n  \"suggestions\": []\n}",
+        "evaluated_at": "2026-11-05T04:11:11.012667+00:00",
+        "status": "success"
+    },
+    {
+        "submission_id": "Q10_S01",
+        "question_id": "Q10",
+        "generator_model": "qwen2.5-coder:3b",
+        "judge_model": "qwen2.5:7b",
+        "prompt_version": "structured_rubric_v1",
+        "evaluation": {
+            "correctness": 10,
+            "security": 10,
+            "readability": 10,
+            "efficiency": 10,
+            "overall_score": 10.0,
+            "explanations": {
+                "correctness": "The code correctly implements the Euclidean algorithm to calculate the greatest common divisor (GCD) of two integers. It handles all edge cases, such as when one of the inputs is zero or when both inputs are zero, by correctly returning the non-zero value or zero, respectively.",
+                "security": "The code does not perform any unsafe operations or handle inputs in a way that could lead to security vulnerabilities. It simply takes two integer inputs and returns their GCD, with no external dependencies or risky operations.",
+                "readability": "The code is well-structured and easy to read. The function name, parameter names, and docstring are clear and descriptive. The code follows Python's PEP 8 style guide, with proper indentation and spacing.",
+                "efficiency": "The code is highly efficient with a time complexity of O(log(min(a, b))) and a space complexity of O(1). It uses a single while loop and a couple of variable assignments, making it both time and space efficient."
+            },
+            "issues": [],
+            "suggestions": []
+        },
+        "raw_response": "{\n  \"correctness\": 10,\n  \"security\": 10,\n  \"readability\": 10,\n  \"efficiency\": 10,\n  \"overall_score\": 10,\n  \"explanations\": {\n    \"correctness\": \"The code correctly implements the Euclidean algorithm to calculate the greatest common divisor (GCD) of two integers. It handles all edge cases, such as when one of the inputs is zero or when both inputs are zero, by correctly returning the non-zero value or zero, respectively.\",\n    \"security\": \"The code does not perform any unsafe operations or handle inputs in a way that could lead to security vulnerabilities. It simply takes two integer inputs and returns their GCD, with no external dependencies or risky operations.\",\n    \"readability\": \"The code is well-structured and easy to read. The function name, parameter names, and docstring are clear and descriptive. The code follows Python's PEP 8 style guide, with proper indentation and spacing.\",\n    \"efficiency\": \"The code is highly efficient with a time complexity of O(log(min(a, b))) and a space complexity of O(1). It uses a single while loop and a couple of variable assignments, making it both time and space efficient.\"\n  },\n  \"issues\": [],\n  \"suggestions\": []\n}",
+        "evaluated_at": "2026-11-05T04:11:22.434293+00:00",
+        "status": "success"
+    }
+]

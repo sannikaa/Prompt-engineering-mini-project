@@ -1,0 +1,261 @@
+[
+    {
+        "question_id": "Q01",
+        "program_a_model": "qwen2.5-coder:3b",
+        "program_b_model": "qwen2.5:7b",
+        "winner": "TIE",
+        "judge_generated_code_won": false,
+        "result": {
+            "winner": "TIE",
+            "reason": "Both programs are functionally correct and cover the same requirements. However, Program B has a minor improvement in readability and efficiency.",
+            "program_a_strengths": [
+                "Clear docstring with proper argument and return types.",
+                "Handles edge cases (0 and 1) explicitly."
+            ],
+            "program_a_weaknesses": [
+                "The function name 'calculate_factorial' is slightly less concise than 'factorial'."
+            ],
+            "program_b_strengths": [
+                "More concise function name 'factorial' which is more common and preferred.",
+                "The loop starts from 1, which is a minor optimization as multiplying by 1 does not change the result."
+            ],
+            "program_b_weaknesses": [
+                "Minor typo in docstring: 'Factorial is not defined for negative numbers' instead of 'Factorial is not defined for negative numbers.'"
+            ]
+        },
+        "status": "success"
+    },
+    {
+        "question_id": "Q02",
+        "program_a_model": "qwen2.5-coder:3b",
+        "program_b_model": "qwen2.5:7b",
+        "winner": "TIE",
+        "judge_generated_code_won": false,
+        "result": {
+            "winner": "TIE",
+            "reason": "Both programs are functionally correct and have similar strengths and weaknesses in terms of readability, security, and efficiency. Program B has a slightly more descriptive docstring, which could be considered a minor strength.",
+            "program_a_strengths": [
+                "The function name and docstring are clear and concise.",
+                "The logic for handling small numbers (less than or equal to 3) is efficient.",
+                "The algorithm used is efficient, checking divisibility up to the square root of the number."
+            ],
+            "program_a_weaknesses": [
+                "The function name 'is_prime' is not followed by parentheses, which could be confusing for some readers.",
+                "The docstring could be more detailed, but this is a minor issue."
+            ],
+            "program_b_strengths": [
+                "The function name and docstring are clear and provide a good description of the function's purpose.",
+                "The docstring includes a mathematical definition of a prime number, which is helpful for understanding the function's logic."
+            ],
+            "program_b_weaknesses": [
+                "The function name 'is_prime' is not followed by parentheses, which could be confusing for some readers.",
+                "The logic for handling small numbers (less than or equal to 3) is efficient, but the code could be slightly more readable by breaking it into smaller, more descriptive steps."
+            ]
+        },
+        "status": "success"
+    },
+    {
+        "question_id": "Q03",
+        "program_a_model": "qwen2.5-coder:3b",
+        "program_b_model": "qwen2.5:7b",
+        "winner": "TIE",
+        "judge_generated_code_won": false,
+        "result": {
+            "winner": "TIE",
+            "reason": "Both programs are functionally equivalent and perform the same task with identical efficiency. However, Program A uses more descriptive parameter names, which can be considered a minor strength in terms of readability.",
+            "program_a_strengths": [
+                "Uses more descriptive parameter name 'input_string' instead of 's'."
+            ],
+            "program_a_weaknesses": [],
+            "program_b_strengths": [],
+            "program_b_weaknesses": [
+                "Uses a less descriptive parameter name 's'."
+            ]
+        },
+        "status": "success"
+    },
+    {
+        "question_id": "Q04",
+        "program_a_model": "qwen2.5-coder:3b",
+        "program_b_model": "qwen2.5:7b",
+        "winner": "TIE",
+        "judge_generated_code_won": false,
+        "result": {
+            "winner": "TIE",
+            "reason": "Both programs are functionally correct and have similar strengths and weaknesses in terms of readability, security, and efficiency. Program A has a minor advantage in readability due to its more explicit variable naming, but Program B is slightly more concise.",
+            "program_a_strengths": [
+                "Explicit variable naming, which can improve readability for some developers."
+            ],
+            "program_a_weaknesses": [
+                "Slightly longer due to the explicit variable naming."
+            ],
+            "program_b_strengths": [
+                "More concise, which can be beneficial in terms of code size and potentially faster parsing by some interpreters."
+            ],
+            "program_b_weaknesses": [
+                "Less explicit variable naming, which might make the code slightly less readable for some developers."
+            ]
+        },
+        "status": "success"
+    },
+    {
+        "question_id": "Q05",
+        "program_a_model": "qwen2.5-coder:3b",
+        "program_b_model": "qwen2.5:7b",
+        "winner": "B",
+        "judge_generated_code_won": true,
+        "result": {
+            "winner": "B",
+            "reason": "Program B is more robust and handles edge cases better, making it a more secure and versatile solution.",
+            "program_a_strengths": [
+                "Simpler and more straightforward implementation.",
+                "Correctly raises a ValueError for an empty list."
+            ],
+            "program_a_weaknesses": [
+                "Does not handle non-numeric elements in the list.",
+                "Does not check if the input is a list."
+            ],
+            "program_b_strengths": [
+                "Handles the case where the list is empty by returning None.",
+                "Checks if the input is a list and raises a TypeError if not.",
+                "Ensures all elements in the list are numeric before processing.",
+                "More comprehensive error handling."
+            ],
+            "program_b_weaknesses": [
+                "Slightly more complex due to additional checks and handling."
+            ]
+        },
+        "status": "success"
+    },
+    {
+        "question_id": "Q06",
+        "program_a_model": "qwen2.5-coder:3b",
+        "program_b_model": "qwen2.5:7b",
+        "winner": "TIE",
+        "judge_generated_code_won": false,
+        "result": {
+            "winner": "TIE",
+            "reason": "Both programs are functionally correct and have similar strengths and weaknesses in terms of security, readability, and efficiency. Program B uses a slightly more Pythonic variable name `lst` instead of `input_list`, which is a minor improvement in readability.",
+            "program_a_strengths": [
+                "Uses a clear and descriptive function name and docstring."
+            ],
+            "program_a_weaknesses": [
+                "The variable name `input_list` is slightly less Pythonic compared to `lst`."
+            ],
+            "program_b_strengths": [
+                "Uses a more Pythonic variable name `lst`.",
+                "The function name and docstring are clear and descriptive."
+            ],
+            "program_b_weaknesses": [
+                "No significant weaknesses identified."
+            ]
+        },
+        "status": "success"
+    },
+    {
+        "question_id": "Q07",
+        "program_a_model": "qwen2.5-coder:3b",
+        "program_b_model": "qwen2.5:7b",
+        "winner": "B",
+        "judge_generated_code_won": true,
+        "result": {
+            "winner": "B",
+            "reason": "Program B is more efficient and handles edge cases more gracefully, making it the better overall solution.",
+            "program_a_strengths": [
+                "Uses a set to ensure distinct elements, which can be efficient for large lists."
+            ],
+            "program_a_weaknesses": [
+                "Sorting the set can be less efficient than a linear scan, especially for large lists.",
+                "Does not handle the case where the list has only two distinct elements, which could lead to incorrect results."
+            ],
+            "program_b_strengths": [
+                "Uses a linear scan to find the first and second largest distinct elements, which is more efficient.",
+                "Handles the case where the list has only two distinct elements correctly.",
+                "Does not require additional space for a set, making it more memory efficient."
+            ],
+            "program_b_weaknesses": [
+                "The variable names `first` and `second` could be clearer, potentially leading to confusion."
+            ]
+        },
+        "status": "success"
+    },
+    {
+        "question_id": "Q08",
+        "program_a_model": "qwen2.5-coder:3b",
+        "program_b_model": "qwen2.5:7b",
+        "winner": "TIE",
+        "judge_generated_code_won": false,
+        "result": {
+            "winner": "TIE",
+            "reason": "Both programs are functionally correct and perform binary search effectively. They differ slightly in implementation details and documentation, but these differences do not significantly impact their overall quality.",
+            "program_a_strengths": [
+                "Uses a more precise calculation for the middle index to avoid potential overflow issues.",
+                "The variable names and comments are clear and concise."
+            ],
+            "program_a_weaknesses": [
+                "The docstring could be more detailed, providing examples or additional context."
+            ],
+            "program_b_strengths": [
+                "The docstring is more detailed, including examples which can be helpful for users.",
+                "The implementation is slightly simpler, which can be easier to understand for beginners."
+            ],
+            "program_b_weaknesses": [
+                "The middle index calculation could potentially lead to overflow if the array size is very large, though this is unlikely in practice.",
+                "The variable names and comments are slightly less clear than in Program A."
+            ]
+        },
+        "status": "success"
+    },
+    {
+        "question_id": "Q09",
+        "program_a_model": "qwen2.5-coder:3b",
+        "program_b_model": "qwen2.5:7b",
+        "winner": "B",
+        "judge_generated_code_won": true,
+        "result": {
+            "winner": "B",
+            "reason": "Program B is more versatile as it can handle multiple types of parentheses, while Program A is limited to only round parentheses. Program B also has more comprehensive checks for unbalanced parentheses, making it more robust.",
+            "program_a_strengths": [
+                "Simpler and more concise for handling only round parentheses."
+            ],
+            "program_a_weaknesses": [
+                "Limited to only round parentheses, making it less versatile.",
+                "Does not handle other types of parentheses like square or curly brackets."
+            ],
+            "program_b_strengths": [
+                "Can handle multiple types of parentheses (round, square, curly).",
+                "More comprehensive checks for unbalanced parentheses, making it more robust."
+            ],
+            "program_b_weaknesses": [
+                "Slightly more complex due to handling multiple types of parentheses."
+            ]
+        },
+        "status": "success"
+    },
+    {
+        "question_id": "Q10",
+        "program_a_model": "qwen2.5-coder:3b",
+        "program_b_model": "qwen2.5:7b",
+        "winner": "TIE",
+        "judge_generated_code_won": false,
+        "result": {
+            "winner": "TIE",
+            "reason": "Both programs are functionally correct and implement the Euclidean algorithm effectively. They are also very similar in terms of readability and efficiency. The differences are minor and do not significantly impact the overall quality.",
+            "program_a_strengths": [
+                "Concise and efficient implementation of the Euclidean algorithm.",
+                "Uses meaningful variable names and a clear structure."
+            ],
+            "program_a_weaknesses": [
+                "Lacks examples in the docstring, which could be useful for understanding the function's usage."
+            ],
+            "program_b_strengths": [
+                "Includes a docstring with examples, which enhances the function's usability and documentation.",
+                "Uses a slightly more verbose but still clear implementation of the algorithm."
+            ],
+            "program_b_weaknesses": [
+                "The function name 'gcd' is less descriptive than 'calculate_gcd' for the purpose of the problem."
+            ]
+        },
+        "status": "success"
+    }
+]

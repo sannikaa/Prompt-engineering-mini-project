@@ -1,0 +1,72 @@
+[
+    {
+        "submission_id": "Q01_S03",
+        "question_id": "Q01",
+        "question": "Write a function to calculate factorial.",
+        "generator_model": "qwen2.5:7b",
+        "code": "def factorial(n):\n    \"\"\"\n    Calculate the factorial of a given non-negative integer n.\n\n    Args:\n    n (int): A non-negative integer whose factorial is to be calculated.\n\n    Returns:\n    int: The factorial of the given number.\n\n    Raises:\n    ValueError: If the input is negative.\n    \"\"\"\n    if n < 0:\n        raise ValueError(\"Factorial is not defined for negative numbers\")\n    if n == 0:\n        return 1\n    result = 1\n    for i in range(1, n + 1):\n        result *= i\n    return result"
+    },
+    {
+        "submission_id": "Q02_S03",
+        "question_id": "Q02",
+        "question": "Write a function to check whether a number is prime.",
+        "generator_model": "qwen2.5:7b",
+        "code": "def is_prime(n):\n    \"\"\"\n    Check if a number is a prime number.\n\n    A prime number is a natural number greater than 1 that is not a product of two smaller natural numbers.\n    This function returns True if the given number is prime, and False otherwise.\n\n    Parameters:\n    n (int): The number to check for primality.\n\n    Returns:\n    bool: True if n is prime, False otherwise.\n    \"\"\"\n    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n    i = 5\n    while i * i <= n:\n        if n % i == 0 or n % (i + 2) == 0:\n            return False\n        i += 6\n    return True"
+    },
+    {
+        "submission_id": "Q03_S03",
+        "question_id": "Q03",
+        "question": "Write a function to reverse a string.",
+        "generator_model": "qwen2.5:7b",
+        "code": "def reverse_string(s):\n    \"\"\"\n    Reverses the given string.\n\n    Parameters:\n    s (str): The string to be reversed.\n\n    Returns:\n    str: The reversed string.\n    \"\"\"\n    return s[::-1]"
+    },
+    {
+        "submission_id": "Q04_S03",
+        "question_id": "Q04",
+        "question": "Write a function to check whether a string is a palindrome.",
+        "generator_model": "qwen2.5:7b",
+        "code": "def is_palindrome(s: str) -> bool:\n    \"\"\"\n    Check if the given string is a palindrome, ignoring non-alphanumeric characters and case.\n\n    Args:\n    s (str): The string to check.\n\n    Returns:\n    bool: True if s is a palindrome, False otherwise.\n    \"\"\"\n    # Remove non-alphanumeric characters and convert to lowercase\n    cleaned = ''.join(char.lower() for char in s if char.isalnum())\n    \n    # Check if the cleaned string is equal to its reverse\n    return cleaned == cleaned[::-1]"
+    },
+    {
+        "submission_id": "Q05_S03",
+        "question_id": "Q05",
+        "question": "Write a function to find the maximum element in a list.",
+        "generator_model": "qwen2.5:7b",
+        "code": "def find_max_element(lst):\n    \"\"\"\n    Finds the maximum element in a given list.\n\n    Parameters:\n    lst (list): A list of numbers (integers or floats).\n\n    Returns:\n    int/float: The maximum element in the list. Returns None if the list is empty.\n\n    Raises:\n    TypeError: If the input is not a list or the list contains non-numeric elements.\n    \"\"\"\n    if not isinstance(lst, list):\n        raise TypeError(\"Input must be a list\")\n    \n    if not lst:  # Check if the list is empty\n        return None\n    \n    if not all(isinstance(x, (int, float)) for x in lst):\n        raise TypeError(\"All elements in the list must be numeric\")\n    \n    max_element = lst[0]\n    for element in lst:\n        if element > max_element:\n            max_element = element\n    \n    return max_element"
+    },
+    {
+        "submission_id": "Q06_S03",
+        "question_id": "Q06",
+        "question": "Write a function to remove duplicates while preserving order.",
+        "generator_model": "qwen2.5:7b",
+        "code": "def remove_duplicates_preserve_order(lst):\n    \"\"\"\n    Remove duplicates from a list while preserving the order of elements.\n\n    Parameters:\n    lst (list): The input list from which duplicates need to be removed.\n\n    Returns:\n    list: A new list with duplicates removed and original order preserved.\n    \"\"\"\n    seen = set()\n    result = []\n    for item in lst:\n        if item not in seen:\n            seen.add(item)\n            result.append(item)\n    return result"
+    },
+    {
+        "submission_id": "Q07_S03",
+        "question_id": "Q07",
+        "question": "Write a function to find the second largest distinct element.",
+        "generator_model": "qwen2.5:7b",
+        "code": "def second_largest_distinct(nums):\n    \"\"\"\n    Finds the second largest distinct element in a list of integers.\n\n    Parameters:\n    nums (list): A list of integers.\n\n    Returns:\n    int or None: The second largest distinct element in the list, or None if it doesn't exist.\n    \"\"\"\n    if len(nums) < 2:\n        return None\n\n    first, second = float('-inf'), float('-inf')\n\n    for num in nums:\n        if num > first:\n            second = first\n            first = num\n        elif first > num > second:\n            second = num\n\n    return second if second != float('-inf') else None"
+    },
+    {
+        "submission_id": "Q08_S03",
+        "question_id": "Q08",
+        "question": "Write a function to perform binary search.",
+        "generator_model": "qwen2.5:7b",
+        "code": "def binary_search(arr, target):\n    \"\"\"\n    Perform binary search on a sorted array to find the index of the target value.\n\n    Parameters:\n    arr (list): A sorted list of elements to search.\n    target (any): The value to search for in the array.\n\n    Returns:\n    int: The index of the target in the array if found, otherwise -1.\n\n    Example:\n    >>> binary_search([1, 2, 3, 4, 5], 3)\n    2\n    >>> binary_search([1, 2, 3, 4, 5], 6)\n    -1\n    \"\"\"\n    left, right = 0, len(arr) - 1\n\n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n\n    return -1"
+    },
+    {
+        "submission_id": "Q09_S03",
+        "question_id": "Q09",
+        "question": "Write a function to check balanced parentheses.",
+        "generator_model": "qwen2.5:7b",
+        "code": "def is_balanced(s):\n    \"\"\"\n    Check if the input string 's' has balanced parentheses.\n\n    Args:\n    s (str): The input string containing parentheses to be checked.\n\n    Returns:\n    bool: True if the parentheses are balanced, False otherwise.\n    \"\"\"\n    stack = []\n    for char in s:\n        if char in \"([{\":\n            stack.append(char)\n        elif char in \")]}\":\n            if not stack:\n                return False\n            if (char == \")\" and stack[-1] != \"(\") or \\\n               (char == \"]\" and stack[-1] != \"[\") or \\\n               (char == \"}\" and stack[-1] != \"{\"):\n                return False\n            stack.pop()\n    return len(stack) == 0\n\n# Test cases\nprint(is_balanced(\"()\"))  # True\nprint(is_balanced(\"([{}])\"))  # True\nprint(is_balanced(\"(]\"))  # False\nprint(is_balanced(\"({[)]}\"))  # False\nprint(is_balanced(\"\"))  # True\nprint(is_balanced(\"({[]})\"))  # True"
+    },
+    {
+        "submission_id": "Q10_S03",
+        "question_id": "Q10",
+        "question": "Write a function to calculate the greatest common divisor.",
+        "generator_model": "qwen2.5:7b",
+        "code": "def gcd(a, b):\n    \"\"\"\n    Calculate the greatest common divisor (GCD) of two numbers using the Euclidean algorithm.\n\n    Parameters:\n    a (int): First number.\n    b (int): Second number.\n\n    Returns:\n    int: The greatest common divisor of a and b.\n\n    Examples:\n    >>> gcd(48, 18)\n    6\n    >>> gcd(0, 5)\n    5\n    >>> gcd(17, 13)\n    1\n    \"\"\"\n    while b != 0:\n        a, b = b, a % b\n    return a"
+    }
+]

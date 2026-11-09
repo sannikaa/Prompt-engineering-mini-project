@@ -1,0 +1,82 @@
+[
+    {
+        "question_id": "Q01",
+        "original_order_winner": "B",
+        "reversed_order_winner": "TIE",
+        "reversed_mapped_to_original": "TIE",
+        "position_consistent": false,
+        "status": "success"
+    },
+    {
+        "question_id": "Q02",
+        "original_order_winner": "TIE",
+        "reversed_order_winner": "TIE",
+        "reversed_mapped_to_original": "TIE",
+        "position_consistent": true,
+        "status": "success"
+    },
+    {
+        "question_id": "Q03",
+        "original_order_winner": "B",
+        "reversed_order_winner": "TIE",
+        "reversed_mapped_to_original": "TIE",
+        "position_consistent": false,
+        "status": "success"
+    },
+    {
+        "question_id": "Q04",
+        "original_order_winner": "TIE",
+        "reversed_order_winner": "TIE",
+        "reversed_mapped_to_original": "TIE",
+        "position_consistent": true,
+        "status": "success"
+    },
+    {
+        "question_id": "Q05",
+        "original_order_winner": "TIE",
+        "reversed_order_winner": "TIE",
+        "reversed_mapped_to_original": "TIE",
+        "position_consistent": true,
+        "status": "success"
+    },
+    {
+        "question_id": "Q06",
+        "original_order_winner": "TIE",
+        "reversed_order_winner": "TIE",
+        "reversed_mapped_to_original": "TIE",
+        "position_consistent": true,
+        "status": "success"
+    },
+    {
+        "question_id": "Q07",
+        "original_order_winner": "TIE",
+        "reversed_order_winner": "TIE",
+        "reversed_mapped_to_original": "TIE",
+        "position_consistent": true,
+        "status": "success"
+    },
+    {
+        "question_id": "Q08",
+        "original_order_winner": "TIE",
+        "reversed_order_winner": "TIE",
+        "reversed_mapped_to_original": "TIE",
+        "position_consistent": true,
+        "status": "success"
+    },
+    {
+        "question_id": "Q09",
+        "original_order_winner": "TIE",
+        "reversed_order_winner": "TIE",
+        "reversed_mapped_to_original": "TIE",
+        "position_consistent": true,
+        "status": "success"
+    },
+    {
+        "question_id": "Q10",
+        "original_order_winner": "B",
+        "reversed_order_winner": "TIE",
+        "reversed_mapped_to_original": "TIE",
+        "position_consistent": false,
+        "status": "success"
+    }
+]

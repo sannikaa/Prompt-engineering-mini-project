@@ -1,0 +1,246 @@
+[
+    {
+        "question_id": "Q01",
+        "program_a": "Q01_S01",
+        "program_b": "Q01_S02",
+        "result": {
+            "winner": "B",
+            "reason": "Program B is more concise and does not unnecessarily initialize the result variable to 1 in the else block, which is redundant since the result is initialized to 1 at the beginning of the function. This makes the code slightly more efficient and easier to read.",
+            "program_a_strengths": [
+                "Correctly handles the base cases (0 and 1) and raises an error for negative inputs."
+            ],
+            "program_a_weaknesses": [
+                "Unnecessary use of an else block for the base cases, which is redundant since the result is already initialized to 1."
+            ],
+            "program_b_strengths": [
+                "More concise and avoids redundant code by initializing the result to 1 only once.",
+                "Maintains the same functionality and readability as Program A."
+            ],
+            "program_b_weaknesses": [
+                "The function name 'factorial' is less descriptive than 'calculate_factorial'."
+            ]
+        },
+        "status": "success"
+    },
+    {
+        "question_id": "Q02",
+        "program_a": "Q02_S01",
+        "program_b": "Q02_S02",
+        "result": {
+            "winner": "TIE",
+            "reason": "Both programs are functionally correct and have similar strengths and weaknesses in terms of readability, security, and efficiency. Program B has a minor advantage in readability due to the use of more descriptive variable names and comments, but this is offset by Program A's slightly more concise implementation.",
+            "program_a_strengths": [
+                "Concise and to the point, making it easy to understand the core logic.",
+                "Efficient prime checking algorithm that reduces the number of iterations needed."
+            ],
+            "program_a_weaknesses": [
+                "Variable names could be more descriptive.",
+                "Lacks comments explaining the logic, which might make it harder for others to understand."
+            ],
+            "program_b_strengths": [
+                "More descriptive variable names and function parameters, which improve readability.",
+                "Includes a comment explaining the function's purpose, which is helpful for understanding the code's intent."
+            ],
+            "program_b_weaknesses": [
+                "Slightly longer and more verbose, which might be unnecessary for the problem at hand.",
+                "The use of `n` as a parameter name instead of `number` is a minor point, but it could be considered less descriptive."
+            ]
+        },
+        "status": "success"
+    },
+    {
+        "question_id": "Q03",
+        "program_a": "Q03_S01",
+        "program_b": "Q03_S02",
+        "result": {
+            "winner": "B",
+            "reason": "Program B is more robust and handles edge cases, making it a better overall implementation.",
+            "program_a_strengths": [
+                "Simple and concise"
+            ],
+            "program_a_weaknesses": [
+                "Does not handle edge cases (empty string, single character string)",
+                "Lacks documentation and variable naming in the docstring"
+            ],
+            "program_b_strengths": [
+                "Handles edge cases (empty string, single character string)",
+                "Includes a detailed docstring with clear parameter and return information",
+                "More readable and maintainable due to additional comments and structure"
+            ],
+            "program_b_weaknesses": [
+                "Slightly longer and more verbose than Program A"
+            ]
+        },
+        "status": "success"
+    },
+    {
+        "question_id": "Q04",
+        "program_a": "Q04_S01",
+        "program_b": "Q04_S02",
+        "result": {
+            "winner": "TIE",
+            "reason": "Both programs are functionally correct and have similar strengths and weaknesses in terms of readability, security, and efficiency. Program B includes example usage, which can be an advantage in certain contexts.",
+            "program_a_strengths": [
+                "Correct implementation of the palindrome check logic.",
+                "Efficient use of list comprehension and slicing for string reversal."
+            ],
+            "program_a_weaknesses": [
+                "No example usage provided, which can make it harder for users to understand how to use the function."
+            ],
+            "program_b_strengths": [
+                "Includes example usage, which can help users understand how to use the function.",
+                "Minor improvements in documentation, such as using 'Parameters' instead of 'Args' and providing more detailed descriptions."
+            ],
+            "program_b_weaknesses": [
+                "Still lacks example usage, which is a minor weakness but can be considered a strength in this context."
+            ]
+        },
+        "status": "success"
+    },
+    {
+        "question_id": "Q05",
+        "program_a": "Q05_S01",
+        "program_b": "Q05_S02",
+        "result": {
+            "winner": "TIE",
+            "reason": "Both programs are functionally correct and perform the same task with identical logic. However, Program B has a minor weakness in its type annotation for the return value, which is not a significant issue for the overall functionality.",
+            "program_a_strengths": [
+                "Correctly raises a ValueError if the input list is empty.",
+                "Uses a clear and descriptive function name and docstring.",
+                "Iterates through the list to find the maximum element efficiently."
+            ],
+            "program_a_weaknesses": [],
+            "program_b_strengths": [
+                "Correctly raises a ValueError if the input list is empty.",
+                "Uses a clear and descriptive function name and docstring.",
+                "Iterates through the list to find the maximum element efficiently."
+            ],
+            "program_b_weaknesses": [
+                "The return type annotation for the function is missing, which could lead to confusion about the return type (it should be `int` or `float` instead of `float`)."
+            ]
+        },
+        "status": "success"
+    },
+    {
+        "question_id": "Q06",
+        "program_a": "Q06_S01",
+        "program_b": "Q06_S02",
+        "result": {
+            "winner": "TIE",
+            "reason": "Both programs are functionally correct and have similar strengths and weaknesses in terms of readability, security, and efficiency. Program A provides a more explicit docstring, which is a minor strength, while Program B has a slightly more concise implementation.",
+            "program_a_strengths": [
+                "Explicit docstring that clearly describes the function's purpose and parameters."
+            ],
+            "program_a_weaknesses": [
+                "Slightly longer code due to the more detailed docstring."
+            ],
+            "program_b_strengths": [
+                "More concise implementation, which can be seen as a minor strength."
+            ],
+            "program_b_weaknesses": [
+                "Lacks the explicit description of preserving the original order, which might be important context for the function's behavior."
+            ]
+        },
+        "status": "success"
+    },
+    {
+        "question_id": "Q07",
+        "program_a": "Q07_S01",
+        "program_b": "Q07_S02",
+        "result": {
+            "winner": "TIE",
+            "reason": "Both programs are functionally correct and handle the problem statement effectively. However, Program B explicitly raises an exception when the condition is not met, which can provide more clarity to the user. Program A uses `None` to indicate the absence of a second largest element, which is also acceptable but less explicit.",
+            "program_a_strengths": [
+                "Uses a set to ensure distinct elements, which is efficient for this problem.",
+                "Handles the case where the list has fewer than two elements by returning `None`."
+            ],
+            "program_a_weaknesses": [
+                "Does not explicitly handle the case where there are fewer than two distinct elements, which could lead to confusion if the user expects an exception."
+            ],
+            "program_b_strengths": [
+                "Explicitly raises a `ValueError` when the list does not contain enough distinct elements, which can provide more clarity to the user.",
+                "Uses a more descriptive function name and docstring."
+            ],
+            "program_b_weaknesses": [
+                "Raises an exception, which might be considered less Pythonic for this problem where `None` is a valid return value."
+            ]
+        },
+        "status": "success"
+    },
+    {
+        "question_id": "Q08",
+        "program_a": "Q08_S01",
+        "program_b": "Q08_S02",
+        "result": {
+            "winner": "TIE",
+            "reason": "Both programs are functionally correct and perform binary search effectively. However, Program B has a slightly more general type hint for the target parameter, which could be seen as a minor strength in terms of flexibility. Program A uses a more precise calculation for the middle index, which is a strength in terms of avoiding potential overflow issues.",
+            "program_a_strengths": [
+                "Correct and efficient binary search implementation",
+                "Precise calculation of the middle index to avoid potential overflow issues"
+            ],
+            "program_a_weaknesses": [
+                "The type hint for the target parameter is specific to integers, which might not be as flexible as the more general type hint in Program B"
+            ],
+            "program_b_strengths": [
+                "More general type hint for the target parameter, allowing for flexibility with different data types",
+                "Slightly simpler and more concise code"
+            ],
+            "program_b_weaknesses": [
+                "Potential for overflow in the middle index calculation if not handled carefully"
+            ]
+        },
+        "status": "success"
+    },
+    {
+        "question_id": "Q09",
+        "program_a": "Q09_S01",
+        "program_b": "Q09_S02",
+        "result": {
+            "winner": "TIE",
+            "reason": "Both programs are functionally correct and have similar strengths and weaknesses in terms of readability, security, and efficiency. Program B is slightly more verbose but provides clearer logic for handling edge cases.",
+            "program_a_strengths": [
+                "More concise and easier to write.",
+                "Directly checks if the stack is empty before popping, which is a common practice."
+            ],
+            "program_a_weaknesses": [
+                "The comment in the docstring is redundant as the function name and docstring are clear.",
+                "The variable name `s` could be more descriptive."
+            ],
+            "program_b_strengths": [
+                "Clearer logic for handling edge cases, making it easier to understand the flow of the program.",
+                "The comment explaining the logic is helpful for understanding the code."
+            ],
+            "program_b_weaknesses": [
+                "Slightly more verbose than Program A.",
+                "The variable name `s` could be more descriptive."
+            ]
+        },
+        "status": "success"
+    },
+    {
+        "question_id": "Q10",
+        "program_a": "Q10_S01",
+        "program_b": "Q10_S02",
+        "result": {
+            "winner": "B",
+            "reason": "Program B is more robust and handles edge cases, making it more reliable. It also provides a more detailed docstring, which improves readability and maintainability.",
+            "program_a_strengths": [
+                "Correct implementation of the Euclidean algorithm.",
+                "Short and concise."
+            ],
+            "program_a_weaknesses": [
+                "Does not handle edge cases where either a or b is zero.",
+                "Does not provide a detailed docstring, reducing readability and maintainability."
+            ],
+            "program_b_strengths": [
+                "Handles edge cases where either a or b is zero.",
+                "Provides a detailed docstring, improving readability and maintainability.",
+                "Uses a more conventional function name 'gcd' instead of 'calculate_gcd'."
+            ],
+            "program_b_weaknesses": [
+                "The handling of the case where both a and b are zero is unconventional, as the GCD is undefined in this case. However, it returns 0 as a convention, which might be acceptable depending on the application."
+            ]
+        },
+        "status": "success"
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "submission_id": "Q01_S01",
+        "question_id": "Q01",
+        "question": "Write a function to calculate factorial.",
+        "topic": "Mathematics",
+        "difficulty": "Easy",
+        "generator_model": "qwen2.5-coder:3b",
+        "prompt_version": "generator_v1",
+        "code": "def calculate_factorial(n):\n    \"\"\"\n    Calculate the factorial of a non-negative integer n.\n    \n    Args:\n    n (int): A non-negative integer whose factorial is to be calculated.\n    \n    Returns:\n    int: The factorial of n.\n    \n    Raises:\n    ValueError: If n is negative.\n    \"\"\"\n    if n < 0:\n        raise ValueError(\"Factorial is not defined for negative numbers.\")\n    elif n == 0 or n == 1:\n        return 1\n    else:\n        result = 1\n        for i in range(2, n + 1):\n            result *= i\n        return result",
+        "raw_response": "```python\ndef calculate_factorial(n):\n    \"\"\"\n    Calculate the factorial of a non-negative integer n.\n    \n    Args:\n    n (int): A non-negative integer whose factorial is to be calculated.\n    \n    Returns:\n    int: The factorial of n.\n    \n    Raises:\n    ValueError: If n is negative.\n    \"\"\"\n    if n < 0:\n        raise ValueError(\"Factorial is not defined for negative numbers.\")\n    elif n == 0 or n == 1:\n        return 1\n    else:\n        result = 1\n        for i in range(2, n + 1):\n            result *= i\n        return result\n```",
+        "generated_at": "2026-11-02T14:43:14.332535+00:00"
+    },
+    {
+        "submission_id": "Q02_S01",
+        "question_id": "Q02",
+        "question": "Write a function to check whether a number is prime.",
+        "topic": "Mathematics",
+        "difficulty": "Easy",
+        "generator_model": "qwen2.5-coder:3b",
+        "prompt_version": "generator_v1",
+        "code": "def is_prime(number):\n    \"\"\"\n    Check if a number is prime.\n\n    Args:\n    number (int): The number to check.\n\n    Returns:\n    bool: True if the number is prime, False otherwise.\n    \"\"\"\n    if number <= 1:\n        return False\n    if number <= 3:\n        return True\n    if number % 2 == 0 or number % 3 == 0:\n        return False\n    i = 5\n    while i * i <= number:\n        if number % i == 0 or number % (i + 2) == 0:\n            return False\n        i += 6\n    return True",
+        "raw_response": "```python\ndef is_prime(number):\n    \"\"\"\n    Check if a number is prime.\n\n    Args:\n    number (int): The number to check.\n\n    Returns:\n    bool: True if the number is prime, False otherwise.\n    \"\"\"\n    if number <= 1:\n        return False\n    if number <= 3:\n        return True\n    if number % 2 == 0 or number % 3 == 0:\n        return False\n    i = 5\n    while i * i <= number:\n        if number % i == 0 or number % (i + 2) == 0:\n            return False\n        i += 6\n    return True\n```",
+        "generated_at": "2026-11-02T14:43:16.979553+00:00"
+    },
+    {
+        "submission_id": "Q03_S01",
+        "question_id": "Q03",
+        "question": "Write a function to reverse a string.",
+        "topic": "Strings",
+        "difficulty": "Easy",
+        "generator_model": "qwen2.5-coder:3b",
+        "prompt_version": "generator_v1",
+        "code": "def reverse_string(input_string):\n    \"\"\"\n    Reverses the given string.\n\n    Args:\n    input_string (str): The string to be reversed.\n\n    Returns:\n    str: The reversed string.\n    \"\"\"\n    return input_string[::-1]",
+        "raw_response": "```python\ndef reverse_string(input_string):\n    \"\"\"\n    Reverses the given string.\n\n    Args:\n    input_string (str): The string to be reversed.\n\n    Returns:\n    str: The reversed string.\n    \"\"\"\n    return input_string[::-1]\n```",
+        "generated_at": "2026-11-02T14:43:18.095922+00:00"
+    },
+    {
+        "submission_id": "Q04_S01",
+        "question_id": "Q04",
+        "question": "Write a function to check whether a string is a palindrome.",
+        "topic": "Strings",
+        "difficulty": "Easy",
+        "generator_model": "qwen2.5-coder:3b",
+        "prompt_version": "generator_v1",
+        "code": "def is_palindrome(s: str) -> bool:\n    \"\"\"\n    Check if the given string is a palindrome.\n\n    A palindrome is a string that reads the same backward as forward.\n    This function ignores spaces, punctuation, and capitalization.\n\n    Args:\n    s (str): The string to check.\n\n    Returns:\n    bool: True if the string is a palindrome, False otherwise.\n    \"\"\"\n    # Normalize the string by removing non-alphanumeric characters and converting to lowercase\n    normalized_str = ''.join(char.lower() for char in s if char.isalnum())\n    \n    # Check if the normalized string is equal to its reverse\n    return normalized_str == normalized_str[::-1]",
+        "raw_response": "```python\ndef is_palindrome(s: str) -> bool:\n    \"\"\"\n    Check if the given string is a palindrome.\n\n    A palindrome is a string that reads the same backward as forward.\n    This function ignores spaces, punctuation, and capitalization.\n\n    Args:\n    s (str): The string to check.\n\n    Returns:\n    bool: True if the string is a palindrome, False otherwise.\n    \"\"\"\n    # Normalize the string by removing non-alphanumeric characters and converting to lowercase\n    normalized_str = ''.join(char.lower() for char in s if char.isalnum())\n    \n    # Check if the normalized string is equal to its reverse\n    return normalized_str == normalized_str[::-1]\n```\n\nThis function first normalizes the input string by removing any non-alphanumeric characters and converting all characters to lowercase. It then checks if the normalized string is equal to its reverse. This approach ensures that the function correctly identifies palindromes, ignoring spaces, punctuation, and capitalization.",
+        "generated_at": "2026-11-02T14:43:21.748705+00:00"
+    },
+    {
+        "submission_id": "Q05_S01",
+        "question_id": "Q05",
+        "question": "Write a function to find the maximum element in a list.",
+        "topic": "Arrays",
+        "difficulty": "Easy",
+        "generator_model": "qwen2.5-coder:3b",
+        "prompt_version": "generator_v1",
+        "code": "def find_maximum_element(numbers):\n    \"\"\"\n    Find the maximum element in a list of numbers.\n\n    Args:\n    numbers (list): A list of numbers.\n\n    Returns:\n    int/float: The maximum element in the list.\n\n    Raises:\n    ValueError: If the list is empty.\n    \"\"\"\n    if not numbers:\n        raise ValueError(\"The list is empty\")\n    max_element = numbers[0]\n    for num in numbers:\n        if num > max_element:\n            max_element = num\n    return max_element",
+        "raw_response": "```python\ndef find_maximum_element(numbers):\n    \"\"\"\n    Find the maximum element in a list of numbers.\n\n    Args:\n    numbers (list): A list of numbers.\n\n    Returns:\n    int/float: The maximum element in the list.\n\n    Raises:\n    ValueError: If the list is empty.\n    \"\"\"\n    if not numbers:\n        raise ValueError(\"The list is empty\")\n    max_element = numbers[0]\n    for num in numbers:\n        if num > max_element:\n            max_element = num\n    return max_element\n```",
+        "generated_at": "2026-11-02T14:43:23.846998+00:00"
+    },
+    {
+        "submission_id": "Q06_S01",
+        "question_id": "Q06",
+        "question": "Write a function to remove duplicates while preserving order.",
+        "topic": "Arrays",
+        "difficulty": "Medium",
+        "generator_model": "qwen2.5-coder:3b",
+        "prompt_version": "generator_v1",
+        "code": "def remove_duplicates_preserve_order(input_list):\n    \"\"\"\n    Remove duplicates from a list while preserving the original order of elements.\n\n    Args:\n    input_list (list): The list from which duplicates need to be removed.\n\n    Returns:\n    list: A new list with duplicates removed, preserving the original order.\n    \"\"\"\n    seen = set()\n    result = []\n    for item in input_list:\n        if item not in seen:\n            seen.add(item)\n            result.append(item)\n    return result",
+        "raw_response": "```python\ndef remove_duplicates_preserve_order(input_list):\n    \"\"\"\n    Remove duplicates from a list while preserving the original order of elements.\n\n    Args:\n    input_list (list): The list from which duplicates need to be removed.\n\n    Returns:\n    list: A new list with duplicates removed, preserving the original order.\n    \"\"\"\n    seen = set()\n    result = []\n    for item in input_list:\n        if item not in seen:\n            seen.add(item)\n            result.append(item)\n    return result\n```",
+        "generated_at": "2026-11-02T14:43:25.837488+00:00"
+    },
+    {
+        "submission_id": "Q07_S01",
+        "question_id": "Q07",
+        "question": "Write a function to find the second largest distinct element.",
+        "topic": "Arrays",
+        "difficulty": "Medium",
+        "generator_model": "qwen2.5-coder:3b",
+        "prompt_version": "generator_v1",
+        "code": "def find_second_largest_distinct(nums):\n    \"\"\"\n    Finds the second largest distinct element in a list of integers.\n\n    Args:\n    nums (list): A list of integers.\n\n    Returns:\n    int: The second largest distinct element, or None if it doesn't exist.\n    \"\"\"\n    if len(nums) < 2:\n        return None\n\n    # Use a set to store distinct elements\n    distinct_nums = set(nums)\n\n    # Convert the set back to a sorted list\n    sorted_nums = sorted(distinct_nums)\n\n    # Check if there are at least two distinct elements\n    if len(sorted_nums) < 2:\n        return None\n\n    # Return the second largest element\n    return sorted_nums[-2]",
+        "raw_response": "```python\ndef find_second_largest_distinct(nums):\n    \"\"\"\n    Finds the second largest distinct element in a list of integers.\n\n    Args:\n    nums (list): A list of integers.\n\n    Returns:\n    int: The second largest distinct element, or None if it doesn't exist.\n    \"\"\"\n    if len(nums) < 2:\n        return None\n\n    # Use a set to store distinct elements\n    distinct_nums = set(nums)\n\n    # Convert the set back to a sorted list\n    sorted_nums = sorted(distinct_nums)\n\n    # Check if there are at least two distinct elements\n    if len(sorted_nums) < 2:\n        return None\n\n    # Return the second largest element\n    return sorted_nums[-2]\n```\n\nThis function first checks if the list has fewer than two elements, in which case it returns `None` since there cannot be a second largest element. It then uses a set to filter out duplicate elements, ensuring that only distinct numbers are considered. The set is then converted back to a sorted list to easily access the second largest element. If there are fewer than two distinct elements, the function returns `None`. Otherwise, it returns the second last element in the sorted list, which is the second largest distinct element.",
+        "generated_at": "2026-11-02T14:43:30.480723+00:00"
+    },
+    {
+        "submission_id": "Q08_S01",
+        "question_id": "Q08",
+        "question": "Write a function to perform binary search.",
+        "topic": "Searching",
+        "difficulty": "Medium",
+        "generator_model": "qwen2.5-coder:3b",
+        "prompt_version": "generator_v1",
+        "code": "def binary_search(arr, target):\n    \"\"\"\n    Perform binary search on a sorted array to find the target value.\n\n    Parameters:\n    arr (list): A sorted list of elements.\n    target (int): The value to search for in the list.\n\n    Returns:\n    int: The index of the target value if found, otherwise -1.\n    \"\"\"\n    left, right = 0, len(arr) - 1\n\n    while left <= right:\n        mid = left + (right - left) // 2  # Calculate the middle index\n\n        if arr[mid] == target:\n            return mid  # Target found, return its index\n        elif arr[mid] < target:\n            left = mid + 1  # Target is in the right half\n        else:\n            right = mid - 1  # Target is in the left half\n\n    return -1  # Target not found",
+        "raw_response": "```python\ndef binary_search(arr, target):\n    \"\"\"\n    Perform binary search on a sorted array to find the target value.\n\n    Parameters:\n    arr (list): A sorted list of elements.\n    target (int): The value to search for in the list.\n\n    Returns:\n    int: The index of the target value if found, otherwise -1.\n    \"\"\"\n    left, right = 0, len(arr) - 1\n\n    while left <= right:\n        mid = left + (right - left) // 2  # Calculate the middle index\n\n        if arr[mid] == target:\n            return mid  # Target found, return its index\n        elif arr[mid] < target:\n            left = mid + 1  # Target is in the right half\n        else:\n            right = mid - 1  # Target is in the left half\n\n    return -1  # Target not found\n```\n\nThis function implements the binary search algorithm to find a target value in a sorted list. It uses a while loop to repeatedly divide the search interval in half. If the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half. Otherwise, narrow it to the upper half. Repeatedly check until the value is found or the interval is empty.",
+        "generated_at": "2026-11-02T14:43:35.417783+00:00"
+    },
+    {
+        "submission_id": "Q09_S01",
+        "question_id": "Q09",
+        "question": "Write a function to check balanced parentheses.",
+        "topic": "Data Structures",
+        "difficulty": "Medium",
+        "generator_model": "qwen2.5-coder:3b",
+        "prompt_version": "generator_v1",
+        "code": "def is_balanced_parentheses(s: str) -> bool:\n    \"\"\"\n    Check if the parentheses in the string are balanced.\n\n    Args:\n    s (str): The string containing parentheses to check.\n\n    Returns:\n    bool: True if the parentheses are balanced, False otherwise.\n    \"\"\"\n    stack = []\n    for char in s:\n        if char == '(':\n            stack.append(char)\n        elif char == ')':\n            if not stack:\n                return False\n            stack.pop()\n    return not stack",
+        "raw_response": "```python\ndef is_balanced_parentheses(s: str) -> bool:\n    \"\"\"\n    Check if the parentheses in the string are balanced.\n\n    Args:\n    s (str): The string containing parentheses to check.\n\n    Returns:\n    bool: True if the parentheses are balanced, False otherwise.\n    \"\"\"\n    stack = []\n    for char in s:\n        if char == '(':\n            stack.append(char)\n        elif char == ')':\n            if not stack:\n                return False\n            stack.pop()\n    return not stack\n```",
+        "generated_at": "2026-11-02T14:43:37.485947+00:00"
+    },
+    {
+        "submission_id": "Q10_S01",
+        "question_id": "Q10",
+        "question": "Write a function to calculate the greatest common divisor.",
+        "topic": "Mathematics",
+        "difficulty": "Medium",
+        "generator_model": "qwen2.5-coder:3b",
+        "prompt_version": "generator_v1",
+        "code": "def calculate_gcd(a, b):\n    \"\"\"\n    Calculate the greatest common divisor of two integers a and b.\n    \n    Parameters:\n    a (int): First integer.\n    b (int): Second integer.\n    \n    Returns:\n    int: The greatest common divisor of a and b.\n    \"\"\"\n    while b:\n        a, b = b, a % b\n    return a",
+        "raw_response": "```python\ndef calculate_gcd(a, b):\n    \"\"\"\n    Calculate the greatest common divisor of two integers a and b.\n    \n    Parameters:\n    a (int): First integer.\n    b (int): Second integer.\n    \n    Returns:\n    int: The greatest common divisor of a and b.\n    \"\"\"\n    while b:\n        a, b = b, a % b\n    return a\n```",
+        "generated_at": "2026-11-02T14:43:39.108898+00:00"
+    }
+]

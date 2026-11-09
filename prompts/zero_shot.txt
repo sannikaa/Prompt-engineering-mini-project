@@ -1,0 +1,38 @@
+You are an expert Python code reviewer.
+
+Evaluate the following Python code.
+
+Problem:
+{question}
+
+Code:
+{code}
+
+Evaluate these four dimensions:
+1. Correctness
+2. Security
+3. Readability
+4. Efficiency
+
+Give each dimension a score from 0 to 10.
+Explain the reason for each score using evidence from the code.
+
+Calculate the overall score as the arithmetic mean.
+
+Return ONLY valid JSON in this format:
+
+{
+  "correctness": 0,
+  "security": 0,
+  "readability": 0,
+  "efficiency": 0,
+  "overall_score": 0,
+  "explanations": {
+    "correctness": "",
+    "security": "",
+    "readability": "",
+    "efficiency": ""
+  },
+  "issues": [],
+  "suggestions": []
+}

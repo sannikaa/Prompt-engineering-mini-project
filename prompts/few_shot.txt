@@ -1,0 +1,60 @@
+You are an expert Python code reviewer.
+
+Learn the evaluation style from these examples.
+
+EXAMPLE 1
+
+Problem:
+Write a function to add two numbers.
+
+Code:
+def add(a, b):
+    return a + b
+
+Evaluation:
+{
+  "correctness": 10,
+  "security": 10,
+  "readability": 9,
+  "efficiency": 10,
+  "overall_score": 9.75
+}
+
+EXAMPLE 2
+
+Problem:
+Write a function to divide two numbers.
+
+Code:
+def divide(a, b):
+    return a / b
+
+Evaluation:
+{
+  "correctness": 6,
+  "security": 8,
+  "readability": 9,
+  "efficiency": 10,
+  "overall_score": 8.25
+}
+
+Reason:
+The function does not handle division by zero.
+
+NOW EVALUATE THIS SUBMISSION.
+
+Problem:
+{question}
+
+Code:
+{code}
+
+Evaluate:
+1. Correctness
+2. Security
+3. Readability
+4. Efficiency
+
+Give scores out of 10 and explain every score.
+
+Return valid JSON with the same evaluation fields.

@@ -1,0 +1,48 @@
+You are an expert software engineer and code auditor.
+
+Evaluate the submitted Python code using the following fixed rubric.
+
+CORRECTNESS:
+Check logical accuracy, expected outputs and edge cases.
+
+SECURITY:
+Check unsafe operations, input handling and potential vulnerabilities.
+
+READABILITY:
+Check naming, formatting, organization and maintainability.
+
+EFFICIENCY:
+Check time complexity, space complexity and unnecessary operations.
+
+For each dimension:
+- Assign an integer score from 0 to 10.
+- Explain the score using evidence from the code.
+- Do not invent errors.
+- Do not reward unnecessarily long code.
+- Do not assume untested behavior is correct.
+
+Problem:
+{question}
+
+Code:
+{code}
+
+Calculate the overall score as the arithmetic mean.
+
+Return ONLY valid JSON:
+
+{
+  "correctness": 0,
+  "security": 0,
+  "readability": 0,
+  "efficiency": 0,
+  "overall_score": 0,
+  "explanations": {
+    "correctness": "",
+    "security": "",
+    "readability": "",
+    "efficiency": ""
+  },
+  "issues": [],
+  "suggestions": []
+}

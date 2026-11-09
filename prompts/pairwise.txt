@@ -1,0 +1,38 @@
+You are an expert Python code reviewer.
+
+Compare two implementations of the same programming problem.
+
+Problem:
+{question}
+
+PROGRAM A:
+{code_a}
+
+PROGRAM B:
+{code_b}
+
+Evaluate both programs on:
+1. Correctness
+2. Security
+3. Readability
+4. Efficiency
+
+Determine which program is better overall.
+
+Rules:
+- Evaluate both using identical criteria.
+- Do not automatically prefer the first program.
+- Do not automatically prefer longer code.
+- Prioritize functional correctness.
+- Explain the strengths and weaknesses of both.
+
+Return ONLY valid JSON:
+
+{
+  "winner": "A, B, or TIE",
+  "reason": "",
+  "program_a_strengths": [],
+  "program_a_weaknesses": [],
+  "program_b_strengths": [],
+  "program_b_weaknesses": []
+}

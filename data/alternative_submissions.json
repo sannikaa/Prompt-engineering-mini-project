@@ -1,0 +1,82 @@
+[
+    {
+        "submission_id": "Q01_S02",
+        "question_id": "Q01",
+        "question": "Write a function to calculate factorial.",
+        "generator_model": "qwen2.5-coder:3b",
+        "prompt_version": "alternative_v1",
+        "code": "def factorial(n):\n    \"\"\"\n    Calculate the factorial of a non-negative integer n.\n    \n    Args:\n    n (int): A non-negative integer whose factorial is to be calculated.\n    \n    Returns:\n    int: The factorial of n.\n    \n    Raises:\n    ValueError: If n is negative.\n    \"\"\"\n    if n < 0:\n        raise ValueError(\"Factorial is not defined for negative numbers.\")\n    result = 1\n    for i in range(2, n + 1):\n        result *= i\n    return result\n\n# Example usage:\nprint(factorial(5))  # Output: 120\nprint(factorial(0))  # Output: 1"
+    },
+    {
+        "submission_id": "Q02_S02",
+        "question_id": "Q02",
+        "question": "Write a function to check whether a number is prime.",
+        "generator_model": "qwen2.5-coder:3b",
+        "prompt_version": "alternative_v1",
+        "code": "def is_prime(n):\n    \"\"\"\n    Check if a number is prime.\n\n    A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself.\n    \n    Parameters:\n    n (int): The number to check for primality.\n    \n    Returns:\n    bool: True if n is prime, False otherwise.\n    \"\"\"\n    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n    i = 5\n    while i * i <= n:\n        if n % i == 0 or n % (i + 2) == 0:\n            return False\n        i += 6\n    return True\n\n# Example usage:\nprint(is_prime(2))  # True\nprint(is_prime(15)) # False\nprint(is_prime(19)) # True"
+    },
+    {
+        "submission_id": "Q03_S02",
+        "question_id": "Q03",
+        "question": "Write a function to reverse a string.",
+        "generator_model": "qwen2.5-coder:3b",
+        "prompt_version": "alternative_v1",
+        "code": "def reverse_string(s):\n    \"\"\"\n    Reverse a string.\n\n    Parameters:\n    s (str): The string to be reversed.\n\n    Returns:\n    str: The reversed string.\n\n    Requirements:\n    - The function should handle empty strings.\n    - The function should handle strings with only one character.\n    - The function should return the reversed string.\n    \"\"\"\n    # Check if the input string is empty\n    if not s:\n        return \"\"\n\n    # Reverse the string using slicing\n    reversed_s = s[::-1]\n\n    return reversed_s\n\n# Example usage:\nprint(reverse_string(\"hello\"))  # Output: \"olleh\"\nprint(reverse_string(\"\"))        # Output: \"\"\nprint(reverse_string(\"a\"))        # Output: \"a\""
+    },
+    {
+        "submission_id": "Q04_S02",
+        "question_id": "Q04",
+        "question": "Write a function to check whether a string is a palindrome.",
+        "generator_model": "qwen2.5-coder:3b",
+        "prompt_version": "alternative_v1",
+        "code": "def is_palindrome(s: str) -> bool:\n    \"\"\"\n    Check if the given string is a palindrome.\n\n    A palindrome is a string that reads the same forward and backward, ignoring spaces, punctuation, and capitalization.\n\n    Parameters:\n    s (str): The string to check.\n\n    Returns:\n    bool: True if the string is a palindrome, False otherwise.\n    \"\"\"\n    # Normalize the string by removing non-alphanumeric characters and converting to lowercase\n    normalized_str = ''.join(char.lower() for char in s if char.isalnum())\n    \n    # Check if the normalized string is equal to its reverse\n    return normalized_str == normalized_str[::-1]\n\n# Example usage:\nprint(is_palindrome(\"A man, a plan, a canal: Panama\"))  # Output: True\nprint(is_palindrome(\"race a car\"))                      # Output: False\nprint(is_palindrome(\" \"))                             # Output: True\nprint(is_palindrome(\"\"))                               # Output: True"
+    },
+    {
+        "submission_id": "Q05_S02",
+        "question_id": "Q05",
+        "question": "Write a function to find the maximum element in a list.",
+        "generator_model": "qwen2.5-coder:3b",
+        "prompt_version": "alternative_v1",
+        "code": "def find_maximum_element(lst):\n    \"\"\"\n    Find the maximum element in a list.\n\n    Parameters:\n    lst (list): A list of numbers.\n\n    Returns:\n    float: The maximum element in the list.\n    \"\"\"\n    if not lst:\n        raise ValueError(\"The list is empty\")\n\n    max_element = lst[0]\n    for num in lst:\n        if num > max_element:\n            max_element = num\n    return max_element"
+    },
+    {
+        "submission_id": "Q06_S02",
+        "question_id": "Q06",
+        "question": "Write a function to remove duplicates while preserving order.",
+        "generator_model": "qwen2.5-coder:3b",
+        "prompt_version": "alternative_v1",
+        "code": "def remove_duplicates(lst):\n    \"\"\"\n    Remove duplicates from a list while preserving the order of the first occurrence of each element.\n\n    Args:\n    lst (list): The list from which duplicates need to be removed.\n\n    Returns:\n    list: A new list with duplicates removed.\n    \"\"\"\n    seen = set()\n    result = []\n    for item in lst:\n        if item not in seen:\n            seen.add(item)\n            result.append(item)\n    return result\n\n# Example usage:\nmy_list = [1, 2, 3, 2, 4, 1, 5]\nprint(remove_duplicates(my_list))  # Output: [1, 2, 3, 4, 5]"
+    },
+    {
+        "submission_id": "Q07_S02",
+        "question_id": "Q07",
+        "question": "Write a function to find the second largest distinct element.",
+        "generator_model": "qwen2.5-coder:3b",
+        "prompt_version": "alternative_v1",
+        "code": "def second_largest_distinct(nums):\n    \"\"\"\n    Find the second largest distinct element in a list of integers.\n\n    Parameters:\n    nums (list): A list of integers.\n\n    Returns:\n    int: The second largest distinct element, or None if it does not exist.\n\n    Raises:\n    ValueError: If the list contains fewer than two distinct elements.\n    \"\"\"\n    # Convert the list to a set to get distinct elements\n    distinct_nums = set(nums)\n\n    # Check if there are at least two distinct elements\n    if len(distinct_nums) < 2:\n        raise ValueError(\"The list contains fewer than two distinct elements.\")\n\n    # Convert the set back to a sorted list\n    sorted_nums = sorted(distinct_nums)\n\n    # Return the second last element in the sorted list\n    return sorted_nums[-2]\n\n# Example usage:\ntry:\n    print(second_largest_distinct([4, 1, 2, 2, 3, 1]))  # Output: 2\n    print(second_largest_distinct([10, 10, 10]))        # Raises ValueError\nexcept ValueError as e:\n    print(e)"
+    },
+    {
+        "submission_id": "Q08_S02",
+        "question_id": "Q08",
+        "question": "Write a function to perform binary search.",
+        "generator_model": "qwen2.5-coder:3b",
+        "prompt_version": "alternative_v1",
+        "code": "def binary_search(arr, target):\n    \"\"\"\n    Perform binary search on a sorted list to find the target value.\n\n    Parameters:\n    arr (list): The sorted list to search within.\n    target (any): The value to search for in the list.\n\n    Returns:\n    int: The index of the target value if found, otherwise -1.\n    \"\"\"\n    left, right = 0, len(arr) - 1\n\n    while left <= right:\n        mid = (left + right) // 2\n\n        # Check if target is present at mid\n        if arr[mid] == target:\n            return mid\n        # If target is greater, ignore left half\n        elif arr[mid] < target:\n            left = mid + 1\n        # If target is smaller, ignore right half\n        else:\n            right = mid - 1\n\n    # Target is not present in array\n    return -1\n\n# Example usage:\nsorted_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\ntarget_value = 7\nresult = binary_search(sorted_list, target_value)\nprint(f\"Target value {target_value} found at index: {result}\")"
+    },
+    {
+        "submission_id": "Q09_S02",
+        "question_id": "Q09",
+        "question": "Write a function to check balanced parentheses.",
+        "generator_model": "qwen2.5-coder:3b",
+        "prompt_version": "alternative_v1",
+        "code": "def is_balanced_parentheses(s: str) -> bool:\n    \"\"\"\n    Check if the given string of parentheses is balanced.\n\n    Args:\n    s (str): The string containing parentheses to be checked.\n\n    Returns:\n    bool: True if the string is balanced, False otherwise.\n    \"\"\"\n    # Initialize an empty stack to keep track of opening parentheses\n    stack = []\n\n    # Iterate over each character in the string\n    for char in s:\n        # If the character is an opening parenthesis, push it onto the stack\n        if char == '(':\n            stack.append(char)\n        # If the character is a closing parenthesis\n        elif char == ')':\n            # Check if the stack is empty or the top of the stack is not an opening parenthesis\n            if not stack or stack[-1] != '(':\n                return False\n            # If the stack is not empty and the top is an opening parenthesis, pop it from the stack\n            stack.pop()\n\n    # If the stack is empty, all opening parentheses were matched\n    return len(stack) == 0\n\n# Example usage:\nprint(is_balanced_parentheses(\"()\"))        # True\nprint(is_balanced_parentheses(\"(())\"))      # True\nprint(is_balanced_parentheses(\"(()))\"))     # False\nprint(is_balanced_parentheses(\")(\"))        # False\nprint(is_balanced_parentheses(\"()()\"))      # True"
+    },
+    {
+        "submission_id": "Q10_S02",
+        "question_id": "Q10",
+        "question": "Write a function to calculate the greatest common divisor.",
+        "generator_model": "qwen2.5-coder:3b",
+        "prompt_version": "alternative_v1",
+        "code": "def gcd(a, b):\n    \"\"\"\n    Calculate the greatest common divisor of two integers a and b using the Euclidean algorithm.\n\n    Parameters:\n    a (int): First integer.\n    b (int): Second integer.\n\n    Returns:\n    int: The greatest common divisor of a and b.\n\n    Edge Cases:\n    - If either a or b is zero, the GCD is the absolute value of the non-zero number.\n    - If both a and b are zero, the GCD is undefined, but this function returns 0 as a convention.\n    \"\"\"\n    # Handle edge cases\n    if a == 0:\n        return abs(b)\n    if b == 0:\n        return abs(a)\n    if a == b:\n        return a\n\n    # Euclidean algorithm\n    while b != 0:\n        a, b = b, a % b\n\n    return a\n\n# Example usage:\nprint(gcd(48, 18))  # Output: 6\nprint(gcd(0, 5))    # Output: 5\nprint(gcd(0, 0))    # Output: 0"
+    }
+]

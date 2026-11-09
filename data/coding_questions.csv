@@ -1,0 +1,11 @@
+question_id,topic,difficulty,question
+Q01,Mathematics,Easy,"Write a function to calculate factorial."
+Q02,Mathematics,Easy,"Write a function to check whether a number is prime."
+Q03,Strings,Easy,"Write a function to reverse a string."
+Q04,Strings,Easy,"Write a function to check whether a string is a palindrome."
+Q05,Arrays,Easy,"Write a function to find the maximum element in a list."
+Q06,Arrays,Medium,"Write a function to remove duplicates while preserving order."
+Q07,Arrays,Medium,"Write a function to find the second largest distinct element."
+Q08,Searching,Medium,"Write a function to perform binary search."
+Q09,Data Structures,Medium,"Write a function to check balanced parentheses."
+Q10,Mathematics,Medium,"Write a function to calculate the greatest common divisor."

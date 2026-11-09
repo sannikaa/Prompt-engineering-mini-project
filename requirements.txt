@@ -1,0 +1,7 @@
+streamlit
+pandas
+matplotlib
+python-dotenv
+pytest
+langchain
+langchain-ollama

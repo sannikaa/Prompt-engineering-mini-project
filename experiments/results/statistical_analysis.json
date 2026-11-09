@@ -1,0 +1,34 @@
+{
+    "number_of_submissions": 10,
+    "number_of_human_reviews": 40,
+    "dimensions": {
+        "correctness": {
+            "human_average": 9.0,
+            "ai_average": 10.0,
+            "mean_absolute_error": 1.0,
+            "spearman_correlation": null,
+            "p_value": null
+        },
+        "security": {
+            "human_average": 10.0,
+            "ai_average": 10.0,
+            "mean_absolute_error": 0.0,
+            "spearman_correlation": null,
+            "p_value": null
+        },
+        "readability": {
+            "human_average": 9.45,
+            "ai_average": 9.9,
+            "mean_absolute_error": 0.525,
+            "spearman_correlation": 0.124,
+            "p_value": 0.7324
+        },
+        "efficiency": {
+            "human_average": 9.5,
+            "ai_average": 9.8,
+            "mean_absolute_error": 0.575,
+            "spearman_correlation": 0.373,
+            "p_value": 0.2889
+        }
+    }
+}
